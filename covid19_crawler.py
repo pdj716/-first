@@ -46,11 +46,11 @@ for i in all_patient_list:
     all_patient_list.append(i_1)
     del all_patient_list[0]
 
-all_patient_list = [int (i) for i in all_patient_list]
-new_patient_list = [int (i) for i in new_patient_list]
-
-
-x= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-plt.bar(x,all_patient_list)
-plt.xticks(x,city_name_list,rotation='vertical')
-plt.show()
+# all_patient_list = [int (i) for i in all_patient_list]            ##누적 확진자 그래프
+# new_patient_list = [int (i) for i in new_patient_list]
+# 
+# 
+# x= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+# plt.bar(x,all_patient_list)
+# plt.xticks(x,city_name_list,rotation='vertical')
+# plt.show()
