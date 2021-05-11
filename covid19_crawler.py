@@ -35,3 +35,22 @@ plt.bar(x, new_patient_list)
 plt.xticks(x, city_name_list)
 plt.suptitle('전국 일일 확진자 수')
 plt.show()
+
+x= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+plt.bar(x,all_patient_list)
+plt.xticks(x,city_name_list,rotation='vertical')
+plt.show()
+
+for i in all_patient_list:
+    i_1=i.replace(',','')
+    all_patient_list.append(i_1)
+    del all_patient_list[0]
+
+all_patient_list = [int (i) for i in all_patient_list]
+new_patient_list = [int (i) for i in new_patient_list]
+
+
+x= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+plt.bar(x,all_patient_list)
+plt.xticks(x,city_name_list,rotation='vertical')
+plt.show()
